@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="maqui.css">
+</head>
+<body>
+    <h1 class="title">Máquina Expendedora</h1>
+    <div class="vending-machine">
+        <div class="product">
+            <img src="https://lagranbodega.vteximg.com.br/arquivos/ids/292168-1000-1000/7501011131361.jpg?v=638187403821530000" alt="Papas Fritas">
+            <h3>Papas Fritas</h3>
+            <p>$15</p>
+            <button class="select" onclick="selectProduct('Papas Fritas', 15)">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="https://d1zc67o3u1epb0.cloudfront.net/media/catalog/product/6/8/6869_1.jpg?width=265&height=390&store=default&image-type=image" alt="Lata de Pepsi">
+            <h3>Lata de Pepsi</h3>
+            <p>$25</p>
+            <button class="select" onclick="selectProduct('Lata de Pepsi', 25)">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="https://mrsabor.mx/cdn/shop/products/hersheys-milk-chocolate-candy-bar-mrsabor_grande.jpg?v=1670537460" alt="Chocorramo">
+            <h3>chocolate hershey</h3>
+            <p>$17</p>
+            <button class="select" onclick="selectProduct('Chocolate', 17)">Seleccionar</button>
+        </div>
+        <div class="product">
+            <img src="https://hebmx.vtexassets.com/arquivos/ids/591411-800-800?v=638497731319200000&width=800&height=800&aspect=true" alt="Caja de Jugo">
+            <h3>Jugo del valle</h3>
+            <p>$15</p>
+            <button class="select" onclick="selectProduct('Jugo', 15)">Seleccionar</button>
+        </div>
+    </div>
+    <div id="message"></div>
+    <div>
+        <input type="number" id="payment-amount" placeholder="Monto a insertar" />
+        <button onclick="insertMoney()">Insertar Dinero</button>
+        <button onclick="returnMoney()">Devolver Dinero</button>
+    </div>
+    <script src="dibujo.js"></script>
+</body>
+</html>
